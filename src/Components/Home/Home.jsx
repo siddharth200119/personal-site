@@ -8,18 +8,18 @@ function Home(){
 
     //generating values for clouds
     let initial_posi = []
-    let final_posi = []
     let initial_posi_y = []
     let speed = []
 
     for(let i = 0; i<4; i++){
-        initial_posi_y[i] = Math.floor((Math.random() * window.screen.height)/10)
+        initial_posi_y[i] = Math.floor((Math.random() * window.screen.height)/20)
+        initial_posi[i] = Math.floor((Math.random() * window.screen.height))
         speed[i] = Math.floor(Math.random() * 50);
     }
     return(
         <div className='sky'>
             {initial_posi_y.map((posi, index) => {
-                return(<Cloud initial_posi_y = {initial_posi_y[index]} speed = {speed[index]} ></Cloud>)
+                return(<Cloud initial_posi = {initial_posi[index]} initial_posi_y = {initial_posi_y[index]} speed = {speed[index]} ></Cloud>)
             })}
 
             <h1>test</h1>
