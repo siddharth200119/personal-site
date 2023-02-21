@@ -7,17 +7,15 @@ function Cloud(props){
         <div>
             <motion.div 
             animate={{
-                x: props.final_posi,
+                x: window.screen.width + 100,
             }}
             initial={{
-                x: props.initial_posi,
+                x: 0,
                 y: props.initial_posi_y
             }}
             transition={{
-                duration: (props.final_posi - props.initial_posi)/50,
+                duration: ((window.screen.width+ 200)/props.speed),
                 repeat: Infinity,
-                repeatType: "reverse",
-                repeatDelay: 1,
             }}
             >
                 <img className='cloud' src={process.env.PUBLIC_URL + "Cloud.png"}></img>

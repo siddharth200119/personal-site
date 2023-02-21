@@ -7,5 +7,6 @@
 
 .cloud{
     height: 50px;
-    
+    position: relative;
+    right: 100px;
 }
