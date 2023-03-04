@@ -1,12 +1,85 @@
 .sky{
     height: 60vh;
-    background-color: #FDF7D0;
+    background-color: #FFF6BD;
     background-size: 100% 100%;
     z-index: 100;
+    animation: sky-init 1500ms;
 }
+
+@keyframes sky-init {
+    0%{
+        height: 100vh;
+    }
+    100%{
+        height: 60vh;
+    }
+}
+
+.sky .content{
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    bottom: 51.5vh;
+    justify-content: center;
+}
+
+.title{
+    text-align: center;
+    color: #ABD9FF;
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+    top: 15vh;
+}
+
+.title h1{
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    white-space: nowrap;
+    animation: typing 2.5s steps(40, end);
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    text-shadow: 1px 1px 2px #434242;
+}
+
+.title h3{
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    white-space: nowrap;
+    animation: typing 2.5s steps(40);
+    animation-delay: 4.1s;
+    animation-fill-mode: forwards;
+    text-shadow: 1px 1px 2px #434242;
+    padding-bottom: 5px;
+}
+
+
+
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
 
 .cloud{
     height: 50px;
     position: relative;
     right: 100px;
+}
+
+.sun{
+    position: absolute;
 }
