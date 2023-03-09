@@ -17,20 +17,20 @@ function Home(){
     return(
         <div className='sky'>
 
-            <div className='sun'>
-                <h1>sun</h1>
-            </div>
+            <div className='rolldown'>
+                <div className='sun'></div>
 
-            {initial_posi_y.map((posi, index) => {
-                return(<Cloud initial_posi = {initial_posi[index]} initial_posi_y = {initial_posi_y[index]} speed = {speed[index]} ></Cloud>)
-            })}
+                {initial_posi_y.map((posi, index) => {
+                    return(<Cloud initial_posi = {initial_posi[index]} initial_posi_y = {initial_posi_y[index]} speed = {speed[index]} ></Cloud>)
+                })}
 
-            <div className='content'>
-                <div className='title'>
-                    <h1>Hi, I am Siddharth</h1>
-                    <h3>Software Engineer and Web Developer</h3>
+                <div className='content'>
+                    <div className='title'>
+                        <h1>Hi, I am Siddharth</h1>
+                        <h3>Software Engineer and Web Developer</h3>
+                    </div>
                 </div>
-            </div>
+                </div>
 
         </div>
     )
