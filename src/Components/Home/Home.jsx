@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Home.css"
 import Cloud from "./Cloud.jsx"
+import Title from "./Title.jsx"
 
 function Home(){
 
@@ -15,22 +16,35 @@ function Home(){
         speed[i] = 20 + Math.floor(Math.random() * 10);
     }
     return(
-        <div className='sky'>
+        <div>
+        <div className='section'>
+            <div className='sky'>
 
-            <div className='rolldown'>
-                <div className='sun'></div>
+                <div className='rolldown'>
+                    <div className='sun'></div>
 
-                {initial_posi_y.map((posi, index) => {
-                    return(<Cloud initial_posi = {initial_posi[index]} initial_posi_y = {initial_posi_y[index]} speed = {speed[index]} ></Cloud>)
-                })}
+                    {initial_posi_y.map((posi, index) => {
+                        return(<Cloud initial_posi = {initial_posi[index]} initial_posi_y = {initial_posi_y[index]} speed = {speed[index]} ></Cloud>)
+                    })}
 
-                <div className='content'>
-                    <div className='title'>
-                        <h1>Hi, I am Siddharth</h1>
-                        <h3>Software Engineer and Web Developer</h3>
+                    <div className='content'>
+                        <div className='title'>
+                            <h1>Hi, I am Siddharth</h1>
+                            <h3>Software Engineer and Web Developer</h3>
+                        </div>
                     </div>
                 </div>
-                </div>
+            </div>
+            <div className='scrollDown'>
+                <div className='ball'></div>
+            </div>
+        </div>
+
+        <div className='section'>
+            <div className='about'>
+                <Title titlename="About"></Title>
+            </div>
+        </div>
 
         </div>
     )

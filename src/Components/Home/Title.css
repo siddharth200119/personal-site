@@ -1,0 +1,9 @@
+.section-title{
+    animation: titleslidein 0.5s;
+}
+
+.section-title h1{
+    color: #DFFFD8;
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+}
