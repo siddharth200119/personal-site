@@ -6,7 +6,8 @@
     top: 0;
     background-color: transparent;
     z-index: 999;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
 }
 
@@ -15,9 +16,20 @@
 }
 
 .NavBarItem{
-    font-size: 25px;
-    padding: 0 15px;
+    font-size: 23px;
+    padding: 0 10px;
     text-decoration: none;
     color: black;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
 }
 
+.links div img{
+    height: 30px;
+    padding: 0 7px;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+}

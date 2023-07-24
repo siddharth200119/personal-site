@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import "./NavBar.css"
 import NavBarItems from './NavBaritems';
+import links from './links';
 
 function NavBar(){
 
@@ -22,7 +23,13 @@ function NavBar(){
                 ))}
             </div>
             <div className='links'>
-
+                {
+                  links.map((link) => (
+                    <div>
+                      <a href={link.url}><img src={link.icon}></img></a>
+                    </div>
+                  ))
+                }
             </div>
         </div>
     )
