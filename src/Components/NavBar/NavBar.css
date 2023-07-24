@@ -1,0 +1,23 @@
+.NavBar{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    top: 0;
+    background-color: transparent;
+    z-index: 999;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.hide{
+    opacity: 0.5;
+}
+
+.NavBarItem{
+    font-size: 25px;
+    padding: 0 15px;
+    text-decoration: none;
+    color: black;
+}
+
