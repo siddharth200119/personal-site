@@ -16,7 +16,10 @@ function NavBar(){
     }, []);
 
     return(
-        <div className={`NavBar ${hide ? "hide" : ""}`}>
+        <div className={`NavBar`}>
+            <div className={`logo ${hide ? "hide" : ""}`}>
+              <h1>Siddharth</h1>
+            </div>
             <div className='NavBarItems'>
                 {NavBarItems.map((item) => (
                     <a href={'/' + item.title} className='NavBarItem'>{item.title.charAt(0).toUpperCase() + item.title.slice(1)} </a>
