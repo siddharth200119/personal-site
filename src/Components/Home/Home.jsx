@@ -41,7 +41,7 @@ function Home(){
         </div>
 
         <div className='section'>
-            <div className='about'>
+            <div id='about'>
                 <Title titlename="About"></Title>
             </div>
         </div>
