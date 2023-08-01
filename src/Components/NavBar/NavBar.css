@@ -15,11 +15,15 @@
     opacity: 0;
 }
 
+.scrolled_color{
+   color: #ABD9FF !important;
+}
+
 .NavBarItem{
     font-size: 23px;
     padding: 0 10px;
     text-decoration: none;
-    color: #ABD9FF;
+    color: #FFF6BD;
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     text-shadow: 1px 1px 2px #434242;
@@ -50,7 +54,7 @@
     font-size: 17px;
     padding: 0 10px;
     text-decoration: none;
-    color: #ABD9FF;
+    color: #FFF6BD;
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     text-shadow: 1px 1px 2px #434242;

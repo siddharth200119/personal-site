@@ -10,7 +10,7 @@ function NavBar(){
     useEffect(() => {
       if (typeof window !== "undefined") {
         window.addEventListener("scroll", () =>
-          setHide(window.scrollY < window.innerHeight * 0.5)
+          setHide(window.scrollY < window.innerHeight * 0.65)
         );
       }
     }, []);
@@ -22,7 +22,7 @@ function NavBar(){
             </div>
             <div className='NavBarItems'>
                 {NavBarItems.map((item) => (
-                    <a href={'#' + item.title} className='NavBarItem'>{item.title.charAt(0).toUpperCase() + item.title.slice(1)} </a>
+                    <a href={'#' + item.title} className={`NavBarItem ${hide ? "scrolled_color" : ""}`}>{item.title.charAt(0).toUpperCase() + item.title.slice(1)} </a>
                 ))}
             </div>
             <div className='links'>
